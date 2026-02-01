@@ -1,4 +1,4 @@
-# GitHub Action: Keepalive Workflow
+# GitHub Action: Keep Workflow Alive
 
 GitHub Action to prevent GitHub from [disabling scheduled workflows due to
 repository inactivity][1].
