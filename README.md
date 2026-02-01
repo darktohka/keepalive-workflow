@@ -24,12 +24,12 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       # ... whatever other steps you need to run your tests
-
-  workflow-keepalive:
-    if: github.event_name == 'schedule'
-    runs-on: ubuntu-latest
+  keepalive:
+    name: Keep workflow alive
+    runs-on: ubuntu-slim
     permissions:
       actions: write
     steps:
-      - uses: darktohka/keepalive-workflow@v1
+      - name: Keep workflow alive
+        uses: darktohka/keepalive-workflow@v1
 ```
